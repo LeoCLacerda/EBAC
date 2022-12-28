@@ -110,3 +110,19 @@ section h2 {
 #economia .articles a {
     background-color: darkgoldenrod;
 }
+
+#entretenimento {
+    background-color: rgb(0, 0, 255, 0.25);
+}
+
+#entretenimento .articles a {
+    background-color: royalblue;
+}
+
+#tecnologia {
+    background-color: azure;
+}
+
+#tecnologia .articles a {
+    background-color: darkgreen;
+}
