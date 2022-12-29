@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício Módulo 07</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Formulário de Números</h1>
+    <h2>Entre com os números</h2>
+    <form id="formulario" class="formulario">
+        <p>Digite o primeiro número</p>
+        <input id="numeroUm" type="number" />
+        <span id="numeroUmValidator" class="validationErro">Campo obrigatório</span>
+        <br/>
+        <br/>
+        <p>Digite o segundo número</p>
+        <input id="numeroDois" type="number" />
+        <span id="numeroDoisValidator" class="validationErro">Campo obrigatório</span>
+        <button id="btnValidar">Validar</button>
+        <p id="formSucesso">Formulário preenchido com sucesso</p>
+        <p id="formErro">O Número dois precisa ser maior que o primeiro</p>
+    </form>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
