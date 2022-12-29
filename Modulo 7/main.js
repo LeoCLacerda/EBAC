@@ -14,11 +14,7 @@ function validarForm(a, b) {
 
 function validarInput(target, textErro) {
     const validar = target.value == ''
-    if(validar){
-        textErro.style.display = 'block'
-    } else {
-        textErro.style.display = 'none'
-    }
+    textErro.style.display = validar ? 'block' : 'none'
     return !validar
 }
 
