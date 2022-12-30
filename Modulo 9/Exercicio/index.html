@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="mainBorder">
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+
+    <div class="container">
+        <div class="tabela">
+            <h3>Tarefas</h3>
+            <ul>
+            </ul>
+        </div>
+
+        <div class="formulario">
+            <form id="idForm">
+                <div class="title">
+                    <h3>Cadastrar Tarefa</h3>
+                    <button id="addBtn">+</button>
+                </div>
+                <p>Tarefa:</p>
+                <input id="idTarefa" type="text" required/>
+                <span id="idErroTarega" class="campoObrigatorio">Digite uma tarefa</span>
+                <p>Data:</p>
+                <input id="idData" type="datetime-local" required/>
+                <span id="idErroData" class="campoObrigatorio">Escolha a data da tarefa</span>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="jquery.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Light", sans-serif;
+}
+
+body {
+    background-color: rgba(0, 139, 192, 0.18);
+}
+
+header {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    border-bottom: 2px white solid;
+    border-radius: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.mainBorder {
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 10%);
+    max-width: 70%;
+    justify-content: center;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    margin: 15px auto;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.tabela {
+    width: 60%;
+}
+
+.formulario {
+    width: 30%;
+}
+
+.tabela,
+.formulario {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 35%);
+    padding: 30px;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+.tabela ul{
+    padding: 10px;
+}
+
+.tabela li {
+    padding: 5px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title button {
+    width: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #00a7ff;
+}
+
+.title button:hover {
+    background-color: #52c1ff;
+    cursor: pointer;
+}
+
+.formulario input {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.formulario p {
+    margin-top: 10px;
+}
+
+.campoObrigatorio {
+    color: red;
+    display: none;
+}
+
+.completarTarefa {
+    text-decoration: line-through;
+}
