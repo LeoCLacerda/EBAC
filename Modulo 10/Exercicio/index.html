@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Formulário Cadastro</h1>
+</header>
+
+<div class="container">
+    <div class="center">
+        <h3>Cadastro</h3>
+    </div>
+
+    <form>
+        <p>Nome Completo</p>
+        <input type="text" />
+        <p>Email</p>
+        <input type="email" />
+        <p>Telefone</p>
+        <input id="idTelefone" type="text" />
+        <p>CPF</p>
+        <input id="idCpf" type="text" />
+        <p>Endereço completo</p>
+        <input type="text" />
+        <p>CEP</p>
+        <input id="idCep" type="text" />
+        <div class="center">
+            <button class="confirm" type="submit">Enviar</button>
+            <button class="cancel" type="reset">Cancelar</button>
+        </div>
+    </form>
+
+
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

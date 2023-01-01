@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Light", sans-serif;
+}
+
+body {
+    background-color: #d5d5d5;
+}
+
+header {
+    text-align: center;
+    margin: 16px;
+}
+
+.container {
+    margin: 16px auto;
+    background-image: linear-gradient(rgba(54, 57, 215, 0.32), rgba(142, 120, 187, 0.43));
+    height: fit-content;
+    max-width: 640px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px teal;
+}
+
+.container header {
+    width: 100%;
+    text-align: center;
+}
+
+.container form {
+    padding: 30px;
+    margin: 16px auto;
+    background-color: rgb(243, 240, 255);
+    border-radius: 10px;
+    height: fit-content;
+    width: 60%;
+}
+
+.container form input {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.confirm {
+    background-color: #004389;
+}
+
+.cancel {
+    background-color: red;
+}
+
+.container form button {
+    width: 40%;
+    margin: 0 5px;
+    height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+button:hover {
+    font-style: italic;
+    cursor: pointer;
+}
