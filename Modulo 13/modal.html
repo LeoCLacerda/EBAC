@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal1">Abrir Modal1</button><br/>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal2">Abrir Modal2</button>
+</div>
+
+<div id="modal1" class="modal" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Titulo Modal 1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis cumque cupiditate debitis
+                    eius illo illum, impedit ipsum iste iusto nemo nostrum optio porro, quos repellendus sunt suscipit
+                    temporibus voluptates.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success">Confirmar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Titulo Modal 2</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis cumque cupiditate debitis
+                    eius illo illum, impedit ipsum iste iusto nemo nostrum optio porro, quos repellendus sunt suscipit
+                    temporibus voluptates.</p>
+            </div>
+            <div class="modal-footer">
+                <h5>Rodapé</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        section {
+            height: 50vh;
+            background-color: #cccccc;
+            margin-bottom: 100px;
+            padding-top: 70px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header id="idHeader">
+    <div class="navbar navbar-dark bg-dark text-light navbar-expand-lg">
+        <div class="container">
+            <h1 class="">Navbar Bootstrap</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#idMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="idMenu" class="collapse navbar-collapse justify-content-end">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#idInicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#idProdutos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#idPromocoes">Promoções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#idContato">Contato</a>
+                    </li>
+                </ul>
+                <button class="btn btn-warning" id="idBtnToast" onclick="return ativarToast()">Chegar TOAST</button>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div data-bs-spy="scroll" data-bs-target="#idHeader">
+    <section id="idInicio">
+        <h2>Inicio</h2>
+        <div class="container">
+            <nav class="nav nav-tabs nav-fill text-light bg-light">
+                <button data-bs-toggle="tab" data-bs-target="#idEletronicos" class="nav-link active" type="button">Eletrônicos</button>
+                <button data-bs-toggle="tab" data-bs-target="#idModaM" class="nav-link border-primary" type="button">Moda Masculina</button>
+                <button data-bs-toggle="tab" data-bs-target="#idModaF" class="nav-link" type="button">Moda Feminina</button>
+            </nav>
+            <div class="tab-content">
+                <div id="idEletronicos" class="tab-pane active bg-dark bg-opacity-25">Conteúdo aba eletrônicos</div>
+                <div id="idModaM" class="tab-pane bg-info">Conteúdo da Moda Masculina</div>
+                <div id="idModaF" class="tab-pane bg-danger">Conteúdo da moda feminina</div>
+            </div>
+        </div>
+    </section>
+    <section id="idProdutos">
+        <h2>Produtos</h2>
+    </section>
+    <section id="idPromocoes">
+        <h2>Promoções</h2>
+    </section>
+    <section id="idContato">
+        <h2>Contato</h2>
+    </section>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0">
+    <div id="idToast" class="toast">
+        <header class="toast-header">
+            <strong>IMPORTANTE</strong>
+        </header>
+        <div class="toast-body">
+            Mensagem muito imporatnte aqui.
+        </div>
+    </div>
+</div>
+
+<script src="lib/bootstrap.bundle.min.js"></script>
+<script>
+    const mensagem = document.getElementById('#idToast')
+    function ativarToast() {
+        alert('antes')
+        const msg = new bootstrap.Toast(mensagem)
+        msg.show()
+        alert('depois')
+    }
+</script>
+</body>
+</html>
